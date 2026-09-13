@@ -1,0 +1,91 @@
+===First push in a Fresh Repo===
+1. Create a repo in Github
+2. git init 
+3. git remote add  origin "[remote_repository_URL]" 
+4. git add .
+5. git commit -m "Commit message"
+#Shifting from master branch to main branch
+6. git branch -M main 
+7. git pull origin  main --allow-unrelated-histories
+#Check Updates
+8. git status
+9. git  add "READMEmd"
+#Final Push
+10. git push origin main 
+
+===ERROR:=== ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Bumblebash/Python-practice.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+=====================================================================================
+
+SOLUTION=====
+git pull --rebase origin main
+git push
+
+
+
+
+
+=========================================
+Check out the git branch your working in
+1. git branch
+
+if you want to work in Master 
+1. git push -u origin master 
+2. git push
+
+---How to delete master branch
+1. git push origin --delete master
+
+
+--Pull the remote branch into your local branch(In case your have commits that you dont
+have locally
+1. git pull origin main --allow-unrelated-histories
+2. git push -u origin main
+ =================================================================
+1. Incase your stuck inside Vim
+:wq
+
+
+===========================================================================================
+Incase you cut and paste the git file into a new file
+During push,
+git push --set-upstream origin main
+
+
+============================================================================================
+--To pull the latest changes into your working directory(Remotely)
+git pull origin main
+ git pull
+git pull --rebase origin main
+
+===========================================================================================
+-----To revert the latest commit
+git revert HEAD 
+
+==============================================================================================
+To clone a working GitRepo
+git clone "Project url"
+cd projectFolder
+---Install Virtual Environment
+py -m venv venv 
+ --- Install requirements
+py -r pip install requirements.txt
+--- Migrate 
+py manage.py makemigrations
+py manage.py migrate
+py manage.py runserver
+
+
+===========================================================================
+To safely rollback a commit.
+git reset --soft HEAD~1
+
+2. To reset git
+git reset
+
+

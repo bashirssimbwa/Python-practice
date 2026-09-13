@@ -1,0 +1,25 @@
+#Step 1: Define the Server instance and Database Name
+server = "DESKTOP-U507UFU\\MSSQLSERVER01"
+database = "Malaria_DB"
+#Step2: Instatiate a connection String 
+conn_str = (
+    "Driver={ODBC Driver 17 for SQL Server};"
+    f"Server={server};"
+    f"Database={database};"
+    "Trusted_Connection=yes;"
+)
+#Step3: Connect to SQL database and Append raw files to the respective in form tables 
+params = urllib.parse.quote_plus(conn_str)
+engine = create_engine(
+    f"mssql+pyodbc:///?odbc_connect={params}",
+    fast_executemany=True 
+                    
+                      )
+
+df1.to_sql(
+    "Malaria202333",
+    engine,
+    if_exists="append",
+    index=False,
+    chunksize=10000
+)

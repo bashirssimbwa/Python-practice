@@ -1,0 +1,2 @@
+====CHANGE TO A desired Working directory
+cd /mnt/c

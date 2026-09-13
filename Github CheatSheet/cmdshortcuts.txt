@@ -1,0 +1,2 @@
+-TO kill a running Process (U use cmd , make sure ur in Local disk c)
+taskkill /PID 1777 /F
