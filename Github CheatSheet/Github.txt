@@ -89,7 +89,7 @@ git reset --soft HEAD~1
 git reset
 
 =======================================================================================================
-Incase your on a differenct branch and u want to pull the latest chnages
+Incase your on a different branch and u want to pull the latest chnages
 
 git fetch origin
 git merge origin/main
@@ -108,4 +108,97 @@ git pull origin main
 git checkout -b feature/your-branch-name
 
 
+=======To allow a printer to communicate with a computer=========
+set the ipaddress to match that of the printer;
+1. Manually configure the ethernet cabel in network settings.
+2. set the static ip address; 192.168.0.50 if th printer is 192.168.0.200
+3. Subnet mask; 255.255.255.0
+4. Default Gateway; 192.168.0.1
 
+
+=====Incase of a bad commit and u want to revert to a good working state==============
+
+Step 1: We track the most recent commits including the bad one
+
+       - git log --oneline -8    i) -8 specifically limits the output to the 8 most recent commits in your repository hsitory
+                                - This lists the number of latest commits by numbers(hash)
+
+Step 2: We then revert back to our desired working commit by number
+      
+      - git reset --hard "hashnumber"   i) This reverts the commit to that working state
+
+step 3: (Optional); Confirm weather  the repo is back to unstaged state(red color )
+
+        git status
+
+step 4: Force push the clean history to github
+
+       - git push origin main --force 
+
+
+=====Establishing the gitignore and safely isolating unwanted files during version control
+
+Step 1: Create a git ignore file inside the project Root(From txt file to .gitignore)
+        Example
+        
+# Visual Studio / SSAS build artifacts
+**/bin/
+**/obj/
+**/.vs/
+*.user
+*.suo
+# Specific SSAS folders
+SQL SCRIPTS/VERSION2/Malaria_SSAS_project/bin/
+SQL SCRIPTS/VERSION2/Malaria_SSAS_project/obj/
+SQL SCRIPTS/VERSION2/Malaria_SSAS_project/**/bin/
+SQL SCRIPTS/VERSION2/Malaria_SSAS_project/**/obj
+
+
+Step 2: Add only Source files(never bin/obj)
+  in the terminal , from git status
+
+git add .gitignore
+git add .
+
+step 3: Commit with a meaningful message
+
+ git commit -m "Introducing SSAS (OLAP) smeantic model as a single source of truth  to decouple the analytics layer from the production database"
+     
+             
+Step 4: Push a clean commit
+
+git push origin main
+
+NOTE Never use full windows paths(e.g D:\Data Analyst\...), Git expects relative patterns from the repository root
+
+# Large data files
+*.csv
+*.parquet
+*.pkl
+*.h5
+*.xlsx
+*.xls
+data/
+datasets/
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+# Jupyter
+.ipynb_checkpoints/
+# Visual Studio / SSAS
+**/bin/
+**/obj/
+**/.vs/
+*.user
+*.suo
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode
+
+======Stop tracking a folder but keep it on disk
+git rm -r --cached .
