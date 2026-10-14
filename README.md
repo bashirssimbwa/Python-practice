@@ -19,7 +19,6 @@ Python Fundamentals
 ### Github  cheatsheet 14/10/2026
 - In case you want to revert to a good working commit after a bad commit.
    - git log --oneline -8 (8 last working commits)
-   - git status  (See 
    
 | Command | Purpose |
 | :--- | :--- |
