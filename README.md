@@ -16,3 +16,18 @@ Python Fundamentals
    - git checkout main
    - git pull origin main
    - git checkout -b feature/your-branch-name
+### Github  cheatsheet 14/10/2026
+- In case you want to revert to a good working commit after a bad commit.
+   - git log --oneline -8 (8 last working commits)
+   - git status  (See 
+   
+| Command | Purpose |
+| :--- | :--- |
+| `git log --oneline -10` | See recent commits and their hashes |
+| `git status` | See staged, unstaged and untracked files |
+| `git reset --hard <hash>` | Move branch + working tree to a previous commit |
+| `git push origin main --force` | Overwrite remote history (use carefully) |
+| `git rm -r --cached <folder>` | Stop tracking a folder but keep it on disk |
+| `git add .gitignore` | Start tracking the ignore rules |
+| `git commit -m "message"` | Create a new commit |
+| `git push origin main` | Publish the commit to GitHub |
