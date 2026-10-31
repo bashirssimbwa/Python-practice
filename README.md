@@ -68,3 +68,6 @@ Python Fundamentals
       -  git pull origin main 
     - **step 3:** Bring your VS code edits back on top
       - git stash pop
+
+  - **Method 3:**(Just pull the latest changes from remote)
+    - git pull 
