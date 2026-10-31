@@ -1,0 +1,22 @@
+===========How to create a Focussed Branch=======
+
+git switch main
+git pull --ff-only
+git switch -c research/56-data-architecture-recommendation
+
+
+===Commiting to a Focussed Branch================
+#Always specfiy your work , avoid using ggit add .
+git add docs/research
+
+
+git commit -m "docs(research): add behavioral event contract for recommendation platform"
+
+#We push to our focussed branch
+git push -u origin research/56-data-architecture-recommendation
+
+
+
+======Incase u had already run git add . and u want to revert to the last working state===
+
+git restore --staged

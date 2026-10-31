@@ -1,0 +1,16 @@
+==== checking if the File matches our project's official style rules(Spacing , naming conventions, or identation)==============
+
+Step1: Check/scan for if style rules were adered to
+
+npx prettier --check docs/research/behavioral-event-contract.md
+
+--check: Looks for issues and reports them, but doesn't change your code. (Great for automated testing/CI pipelines)
+
+
+Step 2: Incase of Inconsistencies, Format the file to required standards
+
+npx prettier --write docs/research/behavioral-event-contract.md
+
+
+• --write: Actively edits the file to fix the formatting automatically.
+
