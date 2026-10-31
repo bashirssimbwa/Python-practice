@@ -1,0 +1,7 @@
+
+=======To allow a printer to communicate with a computer=========
+set the ipaddress to match that of the printer;
+1. Manually configure the ethernet cabel in network settings.
+2. set the static ip address; 192.168.0.50 if th printer is 192.168.0.200
+3. Subnet mask; 255.255.255.0
+4. Default Gateway; 192.168.0.1

@@ -1,0 +1,12 @@
+CREATE DATABASE employee_records;
+
+/*How to backup a data base*/
+BACKUP DATABASE employee_records
+TO DISK = 'F:\BACKUP2'
+GO
+
+/*Saving new changes*/
+BACKUP DATABASE my_db
+TO medium = 'filepath'
+WITH DIFFERENTIAL;
+GO

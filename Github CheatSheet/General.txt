@@ -27,6 +27,13 @@ git pull --rebase origin main
 git push
 
 
+================================================================================================
+Incase of changes in remote repo(Inside Github), But the local file is behind 
+git checkout --ours README2.md   #ours tells git to all consider changes from our local file diretory rather than repo chnages(changes made inside the repo)
+git add README2.md
+git push origin main --force
+
+
 
 
 
@@ -202,3 +209,6 @@ Thumbs.db
 
 ======Stop tracking a folder but keep it on disk
 git rm -r --cached .
+
+=====Reverse git add . ========
+git restore --staged
