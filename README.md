@@ -45,13 +45,26 @@ Python Fundamentals
       - git push -u origin research/56-data-architecture-recommendation
  
 - **Incase u had already run git add . and u want to revert to the last working state**
-        -  git restore --staged
+  -  git restore --staged
 - **Incase u had unstaged Changes but still want to revert to the last working state**
   - **Step 1:** Stash; temporarily shelves your modified files and leaves you with a clean working directory
-              - git stash
+      - git stash
    - **step 2:** Pull the latest changes from github
-             - git pull --rebase origin main
+        - git pull --rebase origin main
    - **Step 3:** Bring back your unstaged work
            - git stash pop
    - **Step 4:** Push your changes Github
-         - git push origin  main
+      - git push origin  main
+
+- **Incase the files in the Local folder are behind the ones in Github , and the ones in github are the most relevant**
+ - **Method 1:**
+    - git reset --hard HEAD
+    - git clean -fd
+    - git pull origin main 
+- **Method 2:** (Incase u want to merge the remote and local changes)
+    - **Step 1:** stash your current VS code edits to a safe place
+      - git stash -u
+    - **step 2:** Pull the 3 commits you made on github:
+      -  git pull origin main 
+    - **step 3:** Bring your VS code edits back on top
+      - git stash pop
