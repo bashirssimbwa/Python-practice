@@ -57,7 +57,7 @@ Python Fundamentals
       - git push origin  main
 
 - **Incase the files in the Local folder are behind the ones in Github , and the ones in github are the most relevant**
- - **Method 1:**
+ - **Method 1:**(clear the local files , consider the github files)
     - git reset --hard HEAD
     - git clean -fd
     - git pull origin main 
