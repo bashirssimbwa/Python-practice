@@ -30,3 +30,28 @@ Python Fundamentals
 | `git add .gitignore` | Start tracking the ignore rules |
 | `git commit -m "message"` | Create a new commit |
 | `git push origin main` | Publish the commit to GitHub |
+
+
+### Github Cheatsheet 31/10/2026
+**- Creating a focussed Branch**
+  - git switch main
+  - git pull --ff-only
+  - git switch -c research/56-data-architecture-recommendation
+    
+- **Committing to a Focussed Branch**
+ - **Always specify your work , avoid using git add .**
+  - git add docs/research
+  - git commit -m "docs(research): add behavioral event contract for recommendation platform"
+  - git push -u origin research/56-data-architecture-recommendation
+ 
+- **Incase u had already run git add . and u want to revert to the last working state**
+    -  git restore --staged
+- **Incase u had unstaged Changes but still want to revert to the last working state**
+  - **Step 1:** Stash; temporarily shelves your modified files and leaves you with a clean working directory
+      - git stash
+   - **step 2:** Pull the latest changes from github
+     - git pull --rebase origin main
+   - **Step 3:** Bring back your unstaged work
+     - git stash pop
+   - **Step 4:** Push your changes Github
+     - git push origin  main
