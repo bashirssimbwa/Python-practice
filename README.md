@@ -48,10 +48,10 @@ Python Fundamentals
         -  git restore --staged
 - **Incase u had unstaged Changes but still want to revert to the last working state**
   - **Step 1:** Stash; temporarily shelves your modified files and leaves you with a clean working directory
-          - git stash
+              - git stash
    - **step 2:** Pull the latest changes from github
-         - git pull --rebase origin main
+             - git pull --rebase origin main
    - **Step 3:** Bring back your unstaged work
-         - git stash pop
+           - git stash pop
    - **Step 4:** Push your changes Github
          - git push origin  main
