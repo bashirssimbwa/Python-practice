@@ -1,0 +1,12 @@
+# 1. Update the message locally
+git commit --amend -m "docs(research): add two-lane data platform architecture, and Mermaid diagrams for the dataplatform and recommendation architecture from upstream to downstream"
+
+# 2. Force update the remote repository
+git push origin HEAD --force-with-lease
+
+
+HEAD ; Automatically points to whatever branch you are 
+     currently on so you don't have to manually type out the branch name.
+
+--force-with-lease; • This is a safer alternative to a standard --force. Even though you are the only one on this branch, 
+                       it's a great habit to build because it prevents you from accidentally overwriting changes if you happened to pull down something else on another device.
