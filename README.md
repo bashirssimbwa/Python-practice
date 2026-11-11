@@ -72,10 +72,20 @@ Python Fundamentals
   - **Method 3:**(Just pull the latest changes from remote)
     - git pull 
 
-11/11/2026
+**11/11/2026**
   - **Incase of a typho in the commit message**
       - git commit --amend -m "Fixed commit message"
       - git push origin HEAD --force-with-lease
   
   - **Creating a Requirements File**
     - pip freeze > requirements.txt
+
+
+  - **File Quality Checks befoe commit in CI-CD DevOps**
+    - **Checking if the file matches our project's official style /rules(Spacing , naming conventions, or identation)**
+    - **Step1: Check/scan for if style rules were adered to**
+        - npx prettier --check docs/research/behavioral-event-contract.md
+    - **Step 2: Incase of Inconsistencies, Format the file to required standards**  
+      - npx prettier --write docs/research/behavioral-event-contract.md
+
+    
