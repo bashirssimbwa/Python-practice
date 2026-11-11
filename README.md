@@ -4,9 +4,9 @@ Python Fundamentals
 2. Conditional Execution
 3. Functions
     - Error Handling(Try/Except)
-- 4. Files
-- 5. Lists
-  6. Dictionaries 
+4. Files
+5. Lists
+6. Dictionaries 
 
 ### Github  cheatsheet   22/09/2026
 - Incase we want to pull latest changes but we are on a diffrent branch
@@ -71,3 +71,11 @@ Python Fundamentals
 
   - **Method 3:**(Just pull the latest changes from remote)
     - git pull 
+
+11/11/2026
+  - **Incase of a typho in the commit message**
+      - git commit --amend -m "Fixed commit message"
+      - git push origin HEAD --force-with-lease
+  
+  - **Creating a Requirements File**
+    - pip freeze > requirements.txt
