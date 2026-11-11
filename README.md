@@ -81,7 +81,7 @@ Python Fundamentals
     - pip freeze > requirements.txt
 
 
-  - **File Quality Checks befoe commit in CI-CD DevOps**
+  - **File Quality Checks before commit in CI-CD and DevOps**
     - **Checking if the file matches our project's official style /rules(Spacing , naming conventions, or identation)**
     - **Step1: Check/scan for if style rules were adered to**
         - npx prettier --check docs/research/behavioral-event-contract.md
