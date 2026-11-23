@@ -45,6 +45,8 @@ Python Fundamentals
       - git push -u origin research/56-data-architecture-recommendation
  
 - **Incase u had already run git add . and u want to revert to the last working state**
+  - **Error⚠: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,**
   -  git restore --staged
 - **Incase u had unstaged Changes but still want to revert to the last working state**
   - **Step 1:** Stash; temporarily shelves your modified files and leaves you with a clean working directory
@@ -88,4 +90,12 @@ Python Fundamentals
     - **Step 2: Incase of Inconsistencies, Format the file to required standards**  
       - npx prettier --write docs/research/behavioral-event-contract.md
 
-    
+
+**23/11/2026**
+  - **To create gitignore and add a file to exclude on the fly**
+    -**Incase its a folder:**
+    - echo .ipynb_checkpoints/ >> .gitignore
+    - **Step 2:** git add .ignore
+
+    - **Incase its just a single file:**
+    - echo .hello.py >> .gitignore

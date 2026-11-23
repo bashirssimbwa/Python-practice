@@ -29,7 +29,7 @@ git push
 
 ================================================================================================
 Incase of changes in remote repo(Inside Github), But the local file is behind 
-git checkout --ours README2.md   #ours tells git to all consider changes from our local file diretory rather than repo chnages(changes made inside the repo)
+git checkout --ours README2.md   #ours tells git to  consider changes from our local file diretory rather than repo changes(changes made inside the repo)
 git add README2.md
 git push origin main --force
 
