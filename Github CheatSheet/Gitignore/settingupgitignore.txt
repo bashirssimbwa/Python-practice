@@ -1,0 +1,18 @@
+Automatically create gitignore and add a file to it on the fly
+
+
+Step 1:
+
+echo  .ipynb_checkpoints/ >> .gitignore
+
+--the forwad slashed represent the full file directory folder
+
+OR plain file documents
+
+
+echo .hello.py >> .gitignore
+
+
+Step 2:
+ git add  .gitignore
+
