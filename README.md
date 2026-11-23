@@ -9,7 +9,7 @@ Python Fundamentals
 6. Dictionaries 
 
 ### Github  cheatsheet   22/09/2026
-- Incase we want to pull latest changes but we are on a diffrent branch
+**- Incase we want to pull latest changes but we are on a diffrent branch**
   - git fetch origin
   - git merge origin/main
 - How to create a branch from main branch
@@ -17,7 +17,7 @@ Python Fundamentals
    - git pull origin main
    - git checkout -b feature/your-branch-name
 ### Github  cheatsheet 14/10/2026
-- In case you want to revert to a good working commit after a bad commit.
+**- In case you want to revert to a good working commit after a bad commit.**
    - git log --oneline -8 (8 last working commits)
    
 | Command | Purpose |
@@ -34,11 +34,11 @@ Python Fundamentals
 
 ### Github Cheatsheet 31/10/2026
 **- Creating a focussed Branch**
-      - git switch main
-      - git pull --ff-only
-      - git switch -c research/56-data-architecture-recommendation
+  - git switch main
+  - git pull --ff-only
+  - git switch -c research/56-data-architecture-recommendation
     
-- **Committing to a Focussed Branch**
+**- Committing to a Focussed Branch**
  - **Always specify your work , avoid using git add .**
       - git add docs/research
       - git commit -m "docs(research): add behavioral event contract for recommendation platform"
