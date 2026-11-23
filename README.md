@@ -1,4 +1,4 @@
-# Python-practice
+# Python-practice and Github Fundamentals(Commads)
 Python Fundamentals 
 1. Variables
 2. Conditional Execution
