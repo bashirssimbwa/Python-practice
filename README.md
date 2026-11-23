@@ -1,4 +1,4 @@
-## Python-practice and Github Fundamentals(Commads)
+## Python-practice & Github Fundamentals(Commads)
 Python Fundamentals 
 1. Variables
 2. Conditional Execution
@@ -8,7 +8,8 @@ Python Fundamentals
 5. Lists
 6. Dictionaries 
 
-### Github  cheatsheet   22/09/2026
+**22/09/2026**
+
 **- Incase we want to pull latest changes but we are on a diffrent branch**
   - git fetch origin
   - git merge origin/main
@@ -16,7 +17,9 @@ Python Fundamentals
    - git checkout main
    - git pull origin main
    - git checkout -b feature/your-branch-name
-### Github  cheatsheet 14/10/2026
+
+**14/10/2026**
+
 **- In case you want to revert to a good working commit after a bad commit.**
    - git log --oneline -8 (8 last working commits)
    
@@ -32,7 +35,9 @@ Python Fundamentals
 | `git push origin main` | Publish the commit to GitHub |
 
 
-### Github Cheatsheet 31/10/2026
+
+ **31/10/2026**
+
 **- Creating a focussed Branch**
   - git switch main
   - git pull --ff-only
