@@ -98,9 +98,10 @@ hint: its remote counterpart. If you want to integrate the remote changes,**
 
 **23/11/2026**
   - **To create gitignore and add a file to exclude on the fly**
-    -**Incase its a folder:**
+  
+  - **Incase its a folder:**
     - echo .ipynb_checkpoints/ >> .gitignore
     - **Step 2:** git add .ignore
 
-    - **Incase its just a single file:**
-    - echo .hello.py >> .gitignore
+   - **Incase its just a single file:**
+      - echo .hello.py >> .gitignore
